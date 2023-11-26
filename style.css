@@ -1,0 +1,243 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-decoration: none;
+  background-color: #eee8e8;
+  height: 30px;
+}
+header > div a {
+  text-decoration: none;
+  color: black;
+  text-decoration: underline 1px;
+}
+.logos {
+  height: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr; /* Adjust as needed based on your layout */
+  align-items: center;
+  margin: 20px;
+  position: relative;
+}
+.logos h2 {
+  display: grid;
+  justify-content: center;
+}
+.logos select,
+.logos h2 {
+  margin: 0;
+}
+.dropdown a {
+  text-decoration: none;
+}
+.fontawes {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (min-width: 900px) {
+  .dropdown {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .drpdwn {
+    display: none;
+  }
+}
+.links {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.links a.btn {
+  margin-right: 10px; /* Adjust as needed for spacing */
+}
+.links input{
+    width: 400px;
+}
+@media screen and (max-width: 768px) {
+  .links {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: flex-start;
+  }
+
+  .links a.btn {
+    display: inline-block;
+  }
+
+  .search {
+    display: block;
+  }
+}
+::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* popup login */
+  .login{
+    position: absolute;
+    transform: translate(-50%,-50%);
+  }
+  .popupLogin{
+    position: absolute;
+    margin-top: 300px;
+    top:-10px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.15);
+    border-radius: 10px;
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+   }
+   .popupLogin.active{
+    top: 50px;
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+   }
+   .popupLogin .close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    cursor: pointer;
+   }
+   .popupLogin .loginForm h2{
+    text-align: center;
+    color: #222;
+    margin: 10px 0px 20px;
+    font-size: 25px;
+   }
+   .popupLogin .loginForm .form-element{
+    margin: 15px 0px; 
+   }
+   .popupLogin .loginForm .form-element label{
+    font-size: 14px;
+    color: #222;
+   }
+   .popupLogin .loginForm .form-element input[type="text"],
+   .popupLogin .loginForm .form-element input[type="password"]{
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    outline:none;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+   }
+   .popupLogin .loginForm .form-element input[type="checkbox"]{
+    margin-right: 5px;
+   }
+   .popupLogin .loginForm .form-element button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #222;
+    color: #f5f5f5;
+    border-radius: 10px;
+    cursor: pointer;
+   }
+   .popupLogin .loginForm .form-element a{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+    color: #1a79ca;
+    text-decoration: none;
+    font-weight: 600;
+   }
+
+
+   .third img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+   }
+   .third{
+    margin: 20px;
+    display: grid;
+    justify-content: center;
+   }
+
+
+   .fourth img{
+    height: 25%;
+   }
+
+   /* slider */
+   .slider-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin: 0 auto; /* Center the images horizontally */
+  }
+
+  .slider-image {
+    width: 300px;
+    display: block; 
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+
+  .slider-btn {
+    cursor: pointer;
+    position: absolute;
+    top: 100%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: #333;
+    border: none;
+    padding: 10px;
+  }
+
+  .prev-btn {
+    left: 0;
+  }
+
+  .next-btn {
+    right: 0;
+  }

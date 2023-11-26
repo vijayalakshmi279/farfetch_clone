@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FARFETCH - The Global Destination For Modern Luxury</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAb1BMVEX///8AAADW1tY1NTXR0dHf39/19fXk5OS7u7vq6uoMDAyGhob29vbZ2dnc3Nxvb29ISEhqamru7u6dnZ0fHx+0tLSOjo5RUVHFxcVAQEClpaWVlZV2dnYlJSUsLCxXV1cWFhZgYGCrq6s7Ozt8fHxneeCwAAACpUlEQVR4nO3b21LiQBCAYZZzNAHkDAqK8v7PuFVreTFb6cRI0907+3/XidV/oSSZib0eAAAAAAAAAAAAAAAAAAAAgJ9bjqr+Hc0804ar+fnXva298orV693j/hj49E0XNnlehZuBWZ9L4czu8/Mp3Jr22Rcud8aB1oUT6z7rwso+0LawcAg0LSzfci+8eARaFh5dAg0LXf4ITQsvuRcOnQLtCo2elfwKPa71n05GhS9tgzzs5tv3/VBf3yawbM47r6qxzSB3M23qm3suFmmZN3x+Q+/hNJTyktrFezYd8mPhq/doSjZS4Ppf/4L5Iq7N7L0n0yItzhy8B1OT/UcoFa5L78G0SHc0T96DqZEefjfeg6mZCYVGN8UG+kJhLhdDsdBt71KfULjo9EPGxeRHijtFJYTC+ffOLkfHxxs2HE1+U4TC7XfOra43bvWbrNMIhcf2M/eH2/KcC9/bzqs0NhsjF+psA3gWttzSPKkEBi7UWkL2LJw2ndOwdpVH4bNWYNRC6V49n8LbL4PBC8W1uWwKP3IvVN1NDVl4zb7wIfdC3f3iiIWa36QxCxt2xA/X6bCaFF0sAxZepL5F2OXHjoXS1fDRdOhOuhWWp/rDP2yH7qRb4Vh4STPyRlXHQuFyGHmFXKVwZztzNyqFobfiVApfbGfuRqUw8LWCwr9RGBGFKQojkvYtynGNsqgvvPbqjm5n8laS9C6GibfsCz1XMSikkEIKKaSQQgoppJBCCimMU3h2LDxORnX6wqp+/dGtJo6F0g5pPitR+a+1UUhhIBSmKIyIwhSFEVGYojAiClMURkRhisKIKExRGBGFKQojojBFYUQUpiiMiMLUf1BYf3Towtl6UOMk/Nvr+FB39PnZdmYAAAAAAAAAAAAAAAAAAAAA+fgN9JY+Hd2M7lUAAAAASUVORK5CYII="
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div>Incoming | <a href="">Shop the latest arrivals</a></div>
+    </header>
+    <!-- first line -->
+    <div class="logos">
+      <div class="drpdwn">
+        <a class="btn" href="#" id="women">women</a>
+        <a class="btn" href="#" id="men">Men</a>
+        <a class="btn" href="#" id="kid">Kids</a>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-bs-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+          style="background-color: white; border: none; color: black"
+        >
+          Women
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#" id="women1">women</a></li>
+          <li><a class="dropdown-item" href="#" id="men1">Men</a></li>
+          <li><a class="dropdown-item" href="#" id="kid1">Kids</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>FARFETCH</h2>
+      </div>
+      <div class="fontawes">
+        <a href="#" class="btn"><i class="fas fa-globe"></i></a>
+        <a href="#" class="btn" id="login"
+          ><i class="fa fa-user" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="btn"
+          ><i class="fa fa-heart" aria-hidden="true"></i
+        ></a>
+        <a href="#" class="btn"
+          ><i class="fa fa-shopping-bag" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- for login page -->
+    <div class="popupLogin">
+      <div class="close-btn">&times;</div>
+      <div class="loginForm">
+        <h3>Log in</h3>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" id="email" placeholder="type your email" />
+        </div>
+        <div class="form-element">
+          <label for="password">password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="type your password"
+          />
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remeber-me" />
+          <label for="remeber-me">Remeber me</label>
+        </div>
+        <div class="form-element">
+          <button>Sign in</button>
+        </div>
+        <div class="form-element">
+          <a href="#">Forgot password?</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- next line -->
+    <div class="links">
+      <a href="" class="btn">25% off</a>
+      <a href="" class="btn">Gifts</a>
+      <a href="" class="btn">New in</a>
+      <a href="" class="btn">Brands</a>
+      <a href="" class="btn">Clothing</a>
+      <a href="" class="btn">Shoes</a>
+      <a href="" class="btn">Bags</a>
+      <a href="" class="btn">Accessories</a>
+      <a href="" class="btn">Jewellery</a>
+      <a href="" class="btn">Homeware</a>
+      <a href="" class="btn">Pre-owned</a>
+      <a href="" class="btn">Sale</a>
+      <form action="">
+        <input
+          class="form-control mr-sm-2"
+          type="search"
+          placeholder="Search"
+          style="width: 100px"
+        />
+      </form>
+    </div>
+
+    <!-- third divison -->
+    <div class="third">
+      <div>
+        <img src="third-div.jpeg" alt="" class="women-div" />
+        <img
+          src="third-div-men.jpeg"
+          alt=""
+          class="men-div"
+          style="display: none"
+        />
+        <img
+          src="third-div-kids.jpeg"
+          alt=""
+          class="kid-div"
+          style="display: none"
+        />
+      </div>
+    </div>
+
+    <!-- forth division -->
+    <div class="fourth slider-container">
+      <div class="slider-wrapper">
+        <img src="w-1-1.webp" alt="" class="slider-image" />
+         <img src="w-5-1.webp" alt="" class="slider-image">
+        <img src="w-6-1.jpg" alt="" class="slider-image">  
+        <img src="w-3-1.webp" alt="" class="slider-image">
+        <img src="w-2-1.webp" alt="" class="slider-image" />        
+        <img src="w-4-1.webp" alt="" class="slider-image">
+       
+      </div>
+      <button class="slider-btn prev-btn" onclick="prevSlide()">
+        &#10094;
+      </button>
+      <button class="slider-btn next-btn" onclick="nextSlide()">
+        &#10095;
+      </button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
